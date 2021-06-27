@@ -51,6 +51,7 @@ namespace Projekt_Programowanie_w61933
             else
             {
                 //tutaj dodać funkcję, która wyświetli labele
+                l1.Visibility = Visibility.Visible;
                 countError++;
                 button.Background = Brushes.Red;
             }
@@ -138,82 +139,82 @@ namespace Projekt_Programowanie_w61933
 
         private void BM_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BM, 'M');
         }
 
         private void BN_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BN, 'N');
         }
 
         private void BN1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BN1, 'Ń');
         }
 
         private void BO_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BO, 'O');
         }
 
         private void BO1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BO1, 'O');
         }
 
         private void BP_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BP, 'P');
         }
 
         private void BR_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BR, 'R');
         }
 
         private void BS_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BS, 'S');
         }
 
         private void BS1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BS1, 'Ś');
         }
 
         private void BT_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BT, 'T');
         }
 
         private void BU_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BU, 'U');
         }
 
         private void BW_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BW, 'W');
         }
 
         private void BY_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BY, 'Y');
         }
 
         private void BZ_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BZ, 'Z');
         }
 
         private void BZ1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BZ1, 'Ż');
         }
 
         private void BZ2_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bB, 'B');
+            checkLetter(BZ2, 'Ź');
         }
     }
 }
