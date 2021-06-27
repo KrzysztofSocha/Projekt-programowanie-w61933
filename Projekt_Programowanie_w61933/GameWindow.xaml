@@ -1,0 +1,45 @@
+﻿<Window x:Class="Projekt_Programowanie_w61933.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_Programowanie_w61933"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="bA" Content="A" HorizontalAlignment="Left" Margin="58,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bA_Click"/>
+        <Button x:Name="bA1" Content="Ą" HorizontalAlignment="Left" Margin="88,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bA1_Click"/>
+        <Button x:Name="bB" Content="B" HorizontalAlignment="Left" Margin="118,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bB_Click"/>
+        <Button x:Name="bC" Content="C" HorizontalAlignment="Left" Margin="148,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bC_Click"/>
+        <Button x:Name="bD" Content="D" HorizontalAlignment="Left" Margin="209,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bD_Click"/>
+        <Button x:Name="bC1" Content="Ć" HorizontalAlignment="Left" Margin="178,217,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="bC1_Click"/>
+        <Button x:Name="bE" Content="E" HorizontalAlignment="Left" Margin="239,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bE_Click"/>
+        <Button x:Name="BE1" Content="Ę" HorizontalAlignment="Left" Margin="58,247,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BE1_Click"/>
+        <Button x:Name="BF" Content="F" HorizontalAlignment="Left" Margin="88,247,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BF_Click"/>
+        <Button x:Name="BG" Content="G" HorizontalAlignment="Left" Margin="118,247,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BG_Click"/>
+        <Button x:Name="BH" Content="H" HorizontalAlignment="Left" Margin="148,247,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BH_Click"/>
+        <Button x:Name="BI" Content="I" HorizontalAlignment="Left" Margin="178,247,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BI_Click"/>
+        <Button x:Name="BJ" Content="J" HorizontalAlignment="Left" Margin="209,247,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BJ_Click"/>
+        <Button x:Name="BK" Content="K" HorizontalAlignment="Left" Margin="240,247,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BK_Click"/>
+        <Button x:Name="BL" Content="L" HorizontalAlignment="Left" Margin="57,277,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BL_Click"/>
+        <Button x:Name="BL1" Content="Ł" HorizontalAlignment="Left" Margin="87,277,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BL1_Click"/>
+        <Button x:Name="BM" Content="M" HorizontalAlignment="Left" Margin="117,277,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BM_Click"/>
+        <Button x:Name="BN" Content="N" HorizontalAlignment="Left" Margin="147,277,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BN_Click"/>
+        <Button x:Name="BN1" Content="Ń" HorizontalAlignment="Left" Margin="177,277,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BN1_Click"/>
+        <Button x:Name="BO" Content="O" HorizontalAlignment="Left" Margin="208,277,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BO_Click"/>
+        <Button x:Name="BO1" Content="Ó" HorizontalAlignment="Left" Margin="239,277,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BO1_Click"/>
+        <Button x:Name="BP" Content="P" HorizontalAlignment="Left" Margin="57,307,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BP_Click"/>
+        <Button x:Name="BR" Content="R" HorizontalAlignment="Left" Margin="87,307,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BR_Click"/>
+        <Button x:Name="BS" Content="S" HorizontalAlignment="Left" Margin="117,307,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BS_Click"/>
+        <Button x:Name="BS1" Content="Ś" HorizontalAlignment="Left" Margin="147,307,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BS1_Click"/>
+        <Button x:Name="BT" Content="T" HorizontalAlignment="Left" Margin="177,307,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BT_Click"/>
+        <Button x:Name="BU" Content="U" HorizontalAlignment="Left" Margin="208,307,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BU_Click"/>
+        <Button x:Name="BW" Content="W" HorizontalAlignment="Left" Margin="239,307,0,0" VerticalAlignment="Top" Height="25" Width="26" FontSize="16" Click="BW_Click"/>
+        <Button x:Name="BY" Content="Y" HorizontalAlignment="Left" Margin="58,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BY_Click"/>
+        <Button x:Name="BZ" Content="Z" HorizontalAlignment="Left" Margin="88,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BZ_Click"/>
+        <Button x:Name="BZ1" Content="Ż" HorizontalAlignment="Left" Margin="118,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BZ1_Click"/>
+        <Button x:Name="BZ2" Content="Ź" HorizontalAlignment="Left" Margin="148,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BZ2_Click"/>
+        <Label x:Name="lWord" Content="_ " HorizontalAlignment="Left" Margin="58,156,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>
