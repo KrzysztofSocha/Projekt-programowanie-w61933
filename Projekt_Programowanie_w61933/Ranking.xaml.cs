@@ -17,11 +17,29 @@ namespace Projekt_Programowanie_w61933
     /// <summary>
     /// Interaction logic for Ranking.xaml
     /// </summary>
+    
     public partial class Ranking : Window
     {
+        public string playerName;
         public Ranking()
         {
             InitializeComponent();
+        }
+
+        private void BNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            var dialog = new GameWindow();
+            dialog.randomWord();
+            dialog.playerName = playerName;
+            dialog.ShowDialog();
+            
+        }
+
+        private void bReturn_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+            Application.Current.MainWindow.Show();
         }
     }
 }

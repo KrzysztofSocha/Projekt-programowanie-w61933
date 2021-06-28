@@ -36,6 +36,10 @@ namespace Projekt_Programowanie_w61933
             {
                 MessageBox.Show("Nazwa gracza nie może zawierać spacji");
             }
+            else if (tbPlayerName.Text.Length > 11)
+            {
+                MessageBox.Show("Nazwa gracza nie być dłuższa niż 11 znaków");
+            }
             else
             {
                 this.Hide();

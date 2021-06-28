@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_Programowanie_w61933"
         mc:Ignorable="d"
-        Title="Ranking" Height="450" Width="800">
+        Title="Ranking" Height="363" Width="576">
     <Grid>
-        <ListBox x:Name="lbRanking" Margin="25,74,497,40" FontSize="16"/>
+        <ListBox x:Name="lbRanking" Margin="25,74,311,30" FontSize="16"/>
         <Label x:Name="label" Content="Ranking 7 najlepszych graczy dla tego słowa" HorizontalAlignment="Left" Margin="25,27,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="BNewGame" Content="Nowa gra" HorizontalAlignment="Left" Margin="377,137,0,0" VerticalAlignment="Top" Height="35" Width="85" Click="BNewGame_Click"/>
+        <Button x:Name="bReturn" Content="Menu główne" HorizontalAlignment="Left" Margin="377,215,0,0" VerticalAlignment="Top" Width="82" Height="35" Click="bReturn_Click"/>
 
     </Grid>
 </Window>

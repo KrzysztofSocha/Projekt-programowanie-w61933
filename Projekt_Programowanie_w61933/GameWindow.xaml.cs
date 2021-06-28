@@ -21,7 +21,7 @@ namespace Projekt_Programowanie_w61933
     /// </summary>
     public partial class GameWindow : Window
     {
-        string[] words = { "ZAMEK", "DOM", "KOMIN" };
+        string[] words = { "ZAMEK", "DOM", "KOMIN","BÓBR","DWORZEC","MUZEUM","ĆMA","ŹREBIĘ","TRAWNIK","KOMPUTER" };
         public string word;
         public string playerName;
         int countError = 0;
@@ -110,7 +110,7 @@ namespace Projekt_Programowanie_w61933
             {
                 l8.Visibility = Visibility.Visible;
                 
-                MessageBoxResult result = MessageBox.Show("Koniec gry, przegrałeś. Chcesz spróbować jeszcze raz?", "",
+                MessageBoxResult result = MessageBox.Show("Koniec gry, przegrałeś. Słowo do odganięcia to: "+word+" Chcesz spróbować jeszcze raz?", "",
                                      MessageBoxButton.YesNo,
                                      MessageBoxImage.Question);
                 if(result == MessageBoxResult.Yes)
@@ -118,6 +118,7 @@ namespace Projekt_Programowanie_w61933
                     this.DialogResult = true;
                     var dialog = new GameWindow();
                     dialog.randomWord();
+                    dialog.playerName = playerName;
                     dialog.ShowDialog();
                 }
                 else

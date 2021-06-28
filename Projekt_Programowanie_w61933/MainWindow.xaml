@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_Programowanie_w61933"
         mc:Ignorable="d"
-        Title="MainWindow" Height="413" Width="375">
+        Title="Menu główne" Height="413" Width="375">
     <Grid>
         <Label x:Name="label" Content="Witamy w grze Wisielec" HorizontalAlignment="Left" Margin="67,45,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label x:Name="label1" Content="Podaj nazwę gracza:" HorizontalAlignment="Left" Margin="99,137,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="tbPlayerName" HorizontalAlignment="Left" Margin="113,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="tbPlayerName" HorizontalAlignment="Left" Margin="99,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="14"/>
         <Button x:Name="bStart" Content="Rozpocznij grę" HorizontalAlignment="Left" Margin="48,267,0,0" VerticalAlignment="Top" Width="118" Height="37" Click="bStart_Click"/>
         <Button x:Name="bEnd" Content="Zakończ grę" HorizontalAlignment="Left" Margin="206,267,0,0" VerticalAlignment="Top" Height="39" Width="118" Click="bEnd_Click"/>
 
