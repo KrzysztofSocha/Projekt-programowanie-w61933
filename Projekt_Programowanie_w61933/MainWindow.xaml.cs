@@ -28,9 +28,29 @@ namespace Projekt_Programowanie_w61933
 
         private void bStart_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new GameWindow();
-            dialog.randomWord();
-            dialog.ShowDialog();
+            if (tbPlayerName.Text == "")
+            {
+                MessageBox.Show("Uzupełnij nazwę gracza");
+            }
+            else if(tbPlayerName.Text.Contains(" ") == true)
+            {
+                MessageBox.Show("Nazwa gracza nie może zawierać spacji");
+            }
+            else
+            {
+                this.Hide();
+                var dialog = new GameWindow();
+                dialog.playerName = tbPlayerName.Text;
+                dialog.randomWord();
+                dialog.ShowDialog();
+            }
+            
+            
+        }
+
+        private void bEnd_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,11 +23,46 @@ namespace Projekt_Programowanie_w61933
     {
         string[] words = { "ZAMEK", "DOM", "KOMIN" };
         public string word;
+        public string playerName;
         int countError = 0;
         int countCorrect = 0;
+        List<string> rankingTop7 = new List<string>();
+        
+        
         public GameWindow()
         {
             InitializeComponent();
+        }
+        private void generateRanking()
+        {
+            StreamReader srScore = File.OpenText("ScorePlayer.TXT");
+
+            string scoreLine;
+            rankingTop7.Add("Nazwa gracza: Ilość błędów:");
+            for (int x = 0; x <=7; x++)
+            {
+                while ((scoreLine = srScore.ReadLine()) != null)
+                {
+
+                    ScorePlayer scorePlayer = new ScorePlayer(scoreLine);
+                    if (scorePlayer.word ==word && scorePlayer.countError == x)
+                    {
+                        rankingTop7.Add(scorePlayer.playerName + " " + scorePlayer.countError);
+                        
+                        if (rankingTop7.Count==8)
+                        {
+                            break;
+                        }
+                    }
+                }
+                if (rankingTop7.Count==8)
+                {
+                    break;
+                }
+                srScore = File.OpenText("ScorePlayer.TXT");
+            }
+            srScore.Close();
+            
         }
         public void randomWord()
         {
@@ -40,6 +77,7 @@ namespace Projekt_Programowanie_w61933
             }
             
         }
+        
         private void drawError(int countError)
         {
             if (countError == 1)
@@ -71,7 +109,22 @@ namespace Projekt_Programowanie_w61933
             else if (countError == 8)
             {
                 l8.Visibility = Visibility.Visible;
-                MessageBox.Show("Koniec gry, przegrałeś");
+                
+                MessageBoxResult result = MessageBox.Show("Koniec gry, przegrałeś. Chcesz spróbować jeszcze raz?", "",
+                                     MessageBoxButton.YesNo,
+                                     MessageBoxImage.Question);
+                if(result == MessageBoxResult.Yes)
+                {
+                    this.DialogResult = true;
+                    var dialog = new GameWindow();
+                    dialog.randomWord();
+                    dialog.ShowDialog();
+                }
+                else
+                {
+                    this.DialogResult = true;
+                    Application.Current.MainWindow.Show();
+                }
             }
         }
         private void checkLetter(Button button, char content)
@@ -94,6 +147,14 @@ namespace Projekt_Programowanie_w61933
                     if (countCorrect == word.Length)
                     {
                         MessageBox.Show("Koniec gry, wygrałeś");
+                        ScorePlayer scorePlayer = new ScorePlayer(word, playerName, countError);
+                        generateRanking();                        
+                        var dialog = new Ranking();
+                        dialog.lbRanking.ItemsSource = rankingTop7;
+                        
+                        this.DialogResult = true;
+                        dialog.ShowDialog();
+
                     }
                 }
                 x += 2;
@@ -103,10 +164,7 @@ namespace Projekt_Programowanie_w61933
                 button.Foreground = Brushes.Green;
             }
             else
-            {
-                //tutaj dodać funkcję, która wyświetli labele
-               
-                
+            {                                
                 countError++;
                 drawError(countError);
                 button.Foreground = Brushes.Red;

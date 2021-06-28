@@ -1,0 +1,14 @@
+﻿<Window x:Class="Projekt_Programowanie_w61933.Ranking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_Programowanie_w61933"
+        mc:Ignorable="d"
+        Title="Ranking" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lbRanking" Margin="25,74,497,40" FontSize="16"/>
+        <Label x:Name="label" Content="Ranking 7 najlepszych graczy dla tego słowa" HorizontalAlignment="Left" Margin="25,27,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>

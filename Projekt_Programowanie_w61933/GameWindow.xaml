@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_Programowanie_w61933"
         mc:Ignorable="d"
-        Title="GameWindow" Height="450" Width="800">
+        Title="GameWindow" Height="450" Width="368">
     <Grid>
         <Button x:Name="bA" Content="A" HorizontalAlignment="Left" Margin="58,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bA_Click"/>
         <Button x:Name="bA1" Content="Ą" HorizontalAlignment="Left" Margin="88,217,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="bA1_Click"/>
