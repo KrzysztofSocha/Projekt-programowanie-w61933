@@ -152,7 +152,7 @@ namespace Projekt_Programowanie_w61933
                         generateRanking();                        
                         var dialog = new Ranking();
                         dialog.lbRanking.ItemsSource = rankingTop7;
-                        
+                        dialog.playerName = playerName;
                         this.DialogResult = true;
                         dialog.ShowDialog();
 
@@ -194,7 +194,7 @@ namespace Projekt_Programowanie_w61933
 
         private void bC1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(bC1, 'C');
+            checkLetter(bC1, 'Ć');
         }
 
         private void bD_Click(object sender, RoutedEventArgs e)
@@ -274,7 +274,7 @@ namespace Projekt_Programowanie_w61933
 
         private void BO1_Click(object sender, RoutedEventArgs e)
         {
-            checkLetter(BO1, 'O');
+            checkLetter(BO1, 'Ó');
         }
 
         private void BP_Click(object sender, RoutedEventArgs e)
