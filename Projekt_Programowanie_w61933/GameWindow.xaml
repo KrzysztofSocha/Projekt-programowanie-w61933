@@ -40,10 +40,14 @@
         <Button x:Name="BZ1" Content="Ż" HorizontalAlignment="Left" Margin="118,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BZ1_Click"/>
         <Button x:Name="BZ2" Content="Ź" HorizontalAlignment="Left" Margin="148,337,0,0" VerticalAlignment="Top" Height="25" Width="25" FontSize="16" Click="BZ2_Click"/>
         <Label x:Name="lWord" Content="_ " HorizontalAlignment="Left" Margin="58,156,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label x:Name="l4" Content="Label" HorizontalAlignment="Left" Margin="87,45,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
-        <Label x:Name="l3" Content="|  / \\  |" HorizontalAlignment="Left" Margin="100,91,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.4,1.037" Visibility="Hidden"/>
-        <Label x:Name="l2" Content="/|\\     /|\\" HorizontalAlignment="Left" Margin="92,107,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l4" Content="  |    |    |" HorizontalAlignment="Left" Margin="91,80,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l3" Content="  |  / \\  |" HorizontalAlignment="Left" Margin="91,96,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.4,1.037" Visibility="Hidden"/>
+        <Label x:Name="l2" Content=" /|\\     /|\\" HorizontalAlignment="Left" Margin="88,112,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
         <Label x:Name="l1" Content="/ | \\   / | \\" HorizontalAlignment="Left" Margin="88,123,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l5" Content="  |  /|\\  |" HorizontalAlignment="Left" Margin="91,64,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l6" Content="  |   O   |" HorizontalAlignment="Left" Margin="91,48,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l7" Content="  |    |    |" HorizontalAlignment="Left" Margin="91,32,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="l8" Content="  ______________" HorizontalAlignment="Left" Margin="91,17,0,0" VerticalAlignment="Top" FontSize="16" Visibility="Hidden"/>
 
     </Grid>
 </Window>

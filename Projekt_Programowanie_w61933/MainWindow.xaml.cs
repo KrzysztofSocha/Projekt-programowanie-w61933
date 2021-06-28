@@ -20,7 +20,7 @@ namespace Projekt_Programowanie_w61933
     /// </summary>
     public partial class MainWindow : Window
     {
-        string[] words = { "ZAMEK", "DOM","KOMIN" };
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -28,17 +28,8 @@ namespace Projekt_Programowanie_w61933
 
         private void bStart_Click(object sender, RoutedEventArgs e)
         {
-            Random rand = new Random();
-            string word;
-            int random = rand.Next(words.Length);
-            word = words[random];
             var dialog = new GameWindow();
-            for(int i=0; i <word.Length; i++)
-            {
-                dialog.lWord.Content += "_ ";
-            }
-            dialog.word = word;
-
+            dialog.randomWord();
             dialog.ShowDialog();
         }
     }

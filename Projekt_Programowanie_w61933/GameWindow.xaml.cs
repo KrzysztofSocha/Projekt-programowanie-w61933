@@ -19,15 +19,64 @@ namespace Projekt_Programowanie_w61933
     /// </summary>
     public partial class GameWindow : Window
     {
+        string[] words = { "ZAMEK", "DOM", "KOMIN" };
         public string word;
         int countError = 0;
+        int countCorrect = 0;
         public GameWindow()
         {
             InitializeComponent();
         }
+        public void randomWord()
+        {
+            Random rand = new Random();
+            
+            int random = rand.Next(words.Length);
+            word = words[random];
+            
+            for (int i = 0; i < word.Length; i++)
+            {
+                lWord.Content += "_ ";
+            }
+            
+        }
+        private void drawError(int countError)
+        {
+            if (countError == 1)
+            {
+                l1.Visibility = Visibility.Visible;
+            }
+            else if (countError == 2)
+            {
+                l2.Visibility = Visibility.Visible;
+            }
+            else if (countError == 3)
+            {
+                l3.Visibility = Visibility.Visible;
+            }
+            else if (countError == 4)
+            {
+                l4.Visibility = Visibility.Visible;
+            } 
+            else if (countError == 5)
+            {
+                l5.Visibility = Visibility.Visible;
+            } else if (countError == 6)
+            {
+                l6.Visibility = Visibility.Visible;
+            } else if (countError == 7)
+            {
+                l7.Visibility = Visibility.Visible;
+            }
+            else if (countError == 8)
+            {
+                l8.Visibility = Visibility.Visible;
+                MessageBox.Show("Koniec gry, przegrałeś");
+            }
+        }
         private void checkLetter(Button button, char content)
         {
-            //button.IsEnabled = false;
+            button.IsEnabled = false;
 
             int x = 2;
             bool checkLetter = false;
@@ -41,19 +90,26 @@ namespace Projekt_Programowanie_w61933
                     string temp = new string(chars);
                     lWord.Content = temp;
                     checkLetter = true;
+                    countCorrect++;
+                    if (countCorrect == word.Length)
+                    {
+                        MessageBox.Show("Koniec gry, wygrałeś");
+                    }
                 }
                 x += 2;
             }
             if (checkLetter)
             {
-                button.Background = Brushes.Green;
+                button.Foreground = Brushes.Green;
             }
             else
             {
                 //tutaj dodać funkcję, która wyświetli labele
-                l1.Visibility = Visibility.Visible;
+               
+                
                 countError++;
-                button.Background = Brushes.Red;
+                drawError(countError);
+                button.Foreground = Brushes.Red;
             }
         }
         private void bA_Click(object sender, RoutedEventArgs e)
