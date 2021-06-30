@@ -17,7 +17,8 @@ using System.Windows.Shapes;
 namespace Projekt_Programowanie_w61933
 {
     /// <summary>
-    /// Interaction logic for GameWindow.xaml
+    /// Okno gry
+    /// zawiera procedury potrzebne do rozgrywki
     /// </summary>
     public partial class GameWindow : Window
     {
@@ -33,6 +34,10 @@ namespace Projekt_Programowanie_w61933
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Procedura generowania rankingu dla danego słowa
+        ///Wybiera 7 najlepszych graczy, na podsatwie ilości błędów przez nich wykonanych
+        /// </summary>
         private void generateRanking()
         {
             StreamReader srScore = File.OpenText("ScorePlayer.TXT");
@@ -64,6 +69,10 @@ namespace Projekt_Programowanie_w61933
             srScore.Close();
             
         }
+        /// <summary>
+        /// Procedura generowania lososowego słowa z tabeli words[]
+        ///Wylosowane słowo trafia do rozgrywki
+        /// </summary>
         public void randomWord()
         {
             Random rand = new Random();
@@ -77,7 +86,10 @@ namespace Projekt_Programowanie_w61933
             }
             
         }
-        
+        /// <summary>
+        /// Procedura odpowiedzialna za rysowanie wisielca
+        /// </summary>
+        /// <param name="countError"> Używany do wyznaczenia, który fragment wisielca ma byc widoczny </param>
         private void drawError(int countError)
         {
             if (countError == 1)
@@ -128,6 +140,11 @@ namespace Projekt_Programowanie_w61933
                 }
             }
         }
+        /// <summary>
+        /// Procedura odpowiedzialna za sprawdzenie czy dana litera zawiera się w zgadywanym słowie
+        /// </summary>
+        /// <param name="button">Potrzebny do operacji na przycisku</param>
+        /// <param name="content">Zaiera znak, który przekazuje przycisk, wykorzystywany do sprawdzenia</param>
         private void checkLetter(Button button, char content)
         {
             button.IsEnabled = false;
@@ -171,6 +188,7 @@ namespace Projekt_Programowanie_w61933
                 button.Foreground = Brushes.Red;
             }
         }
+
         private void bA_Click(object sender, RoutedEventArgs e)
         {
             

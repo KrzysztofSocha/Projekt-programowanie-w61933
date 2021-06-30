@@ -15,7 +15,8 @@ using System.Windows.Shapes;
 namespace Projekt_Programowanie_w61933
 {
     /// <summary>
-    /// Interaction logic for Ranking.xaml
+    /// Okno rankingu graczy
+    /// Wyświetla 7 najlepszy graczy dla danego słowa
     /// </summary>
     
     public partial class Ranking : Window
@@ -25,7 +26,8 @@ namespace Projekt_Programowanie_w61933
         {
             InitializeComponent();
         }
-
+       
+ 
         private void BNewGame_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
