@@ -140,11 +140,19 @@ namespace Projekt_Programowanie_w61933
                 }
             }
         }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         /// <summary>
         /// Procedura odpowiedzialna za sprawdzenie czy dana litera zawiera się w zgadywanym słowie
         /// </summary>
         /// <param name="button">Potrzebny do operacji na przycisku</param>
         /// <param name="content">Zawiera znak, który przekazuje przycisk, wykorzystywany do sprawdzenia</param>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         private void checkLetter(Button button, char content)
         {
             button.IsEnabled = false;
