@@ -16,8 +16,7 @@ using System.Windows.Shapes;
 namespace Projekt_Programowanie_w61933
 {
     /// <summary>
-    /// Menu główne
-    /// Odpowiedzialne za pobranie nazwy użytkownika i rozpoczęcie gry, a także jej zakończenie
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
