@@ -144,7 +144,7 @@ namespace Projekt_Programowanie_w61933
         /// Procedura odpowiedzialna za sprawdzenie czy dana litera zawiera się w zgadywanym słowie
         /// </summary>
         /// <param name="button">Potrzebny do operacji na przycisku</param>
-        /// <param name="content">Zaiera znak, który przekazuje przycisk, wykorzystywany do sprawdzenia</param>
+        /// <param name="content">Zawiera znak, który przekazuje przycisk, wykorzystywany do sprawdzenia</param>
         private void checkLetter(Button button, char content)
         {
             button.IsEnabled = false;
